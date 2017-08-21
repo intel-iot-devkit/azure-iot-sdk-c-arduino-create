@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-zzz
+#include "azure-iot-sdk.h"
 #include "iothub_client.h"
 #include "iothub_message.h"
 #include "azure_c_shared_utility/threadapi.h"
@@ -213,8 +213,10 @@ void iothub_client_sample_mqtt_run(void)
     }
 }
 
-int main(void)
+void setup(void)
 {
     iothub_client_sample_mqtt_run();
     return 0;
 }
+
+void loop(){}
