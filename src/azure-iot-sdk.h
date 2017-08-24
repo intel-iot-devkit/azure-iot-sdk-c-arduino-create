@@ -1,5 +1,4 @@
 #include <agenttypesystem.h>
-#include <azure-iot-sdk.h>
 #include <blob.h>
 #include <codefirst.h>
 #include <commanddecoder.h>
