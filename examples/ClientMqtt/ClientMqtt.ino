@@ -1,6 +1,31 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
+/*********************************PRE-REQUISITES**************************************
+ * This sample needs the connection string obtained from the Azure IOT Hub.
+More information regarding setting,managing, using the Azure IOT Hub is here : 
+https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
+
+ * For this sample :
+ * 1. Create an IOT Hub using the Azure portal. Also, create a shared access policy  :
+ * https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal
+ * Creation of the shared access policy provides the Hub connection string.
+ * The Hub Connection String is needed for the next step.
+ *
+ *
+ * 2. Create a device identity by either using one of these
+ *     https://aka.ms/manageiothub
+ *         OR
+ *     on windows : https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer
+ *    The Hub Connection String will be needed. At the end of this step, get the device connection string.
+ * 3. Provide the Device Connection String to this sample by adding its value to the text fileds on the 'SECRET' tab in this sample.
+ * Alternatively, replace the macro strings in the code with the values.
+ *
+
+ * Build and run the sample to see messages being sent to the AWS IOT Dashboard.
+ * https://us-west-2.console.aws.amazon.com/iotv2/home?region=us-west-2#/dashboard
+ *
+ **************************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include "azure-iot-sdk.h"
