@@ -10,15 +10,11 @@
 #include "azure_c_shared_utility/crt_abstractions.h"
 #include "azure_c_shared_utility/platform.h"
 #include "iothubtransportmqtt.h"
+#include "arduino_secrets.h"
 
 #ifdef MBED_BUILD_TIMESTAMP
 #include "certs.h"
 #endif // MBED_BUILD_TIMESTAMP
-
-/*String containing Hostname, Device Id & Device Key in the format:                         */
-/*  "HostName=<host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"                */
-/*  "HostName=<host_name>;DeviceId=<device_id>;SharedAccessSignature=<device_sas_token>"    */
-static const char* connectionString = "[device connection string]";
 
 static int callbackCounter;
 static char msgText[1024];
@@ -127,7 +123,7 @@ void iothub_client_sample_mqtt_run(void)
     }
     else
     {
-        if ((iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(connectionString, MQTT_Protocol)) == NULL)
+        if ((iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(SECRET_CONNECTIONSTRING, MQTT_Protocol)) == NULL)
         {
             (void)printf("ERROR: iotHubClientHandle is NULL!\r\n");
         }
@@ -216,7 +212,8 @@ void iothub_client_sample_mqtt_run(void)
 void setup(void)
 {
     iothub_client_sample_mqtt_run();
-    return 0;
 }
 
-void loop(){}
+void loop(){
+    delay(100);
+}
