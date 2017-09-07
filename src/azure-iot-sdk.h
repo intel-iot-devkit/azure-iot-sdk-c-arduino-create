@@ -17,13 +17,6 @@
 #include <iothub_message.h>
 #include <iothub_transport_ll.h>
 #include <iothubtransport.h>
-#include <iothubtransport_amqp_cbs_auth.h>
-#include <iothubtransport_amqp_common.h>
-#include <iothubtransport_amqp_connection.h>
-#include <iothubtransport_amqp_device.h>
-#include <iothubtransport_amqp_messenger.h>
-#include <iothubtransport_amqp_telemetry_messenger.h>
-#include <iothubtransport_amqp_twin_messenger.h>
 #include <iothubtransport_mqtt_common.h>
 #include <iothubtransportamqp.h>
 #include <iothubtransportamqp_websockets.h>

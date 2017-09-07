@@ -22,8 +22,7 @@ https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
  * Alternatively, replace the macro strings in the code with the values.
  *
 
- * Build and run the sample to see messages being sent to the AWS IOT Dashboard.
- * https://us-west-2.console.aws.amazon.com/iotv2/home?region=us-west-2#/dashboard
+ * Build and run the sample to see messages being sent to the Azure IOT hub
  *
  **************************************************************************************/
 #include <stdio.h>
