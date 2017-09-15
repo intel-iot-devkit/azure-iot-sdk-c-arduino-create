@@ -29,10 +29,7 @@ https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
 #include <stdlib.h>
 #include "azure-iot-sdk.h"
 #include "arduino_secrets.h"
-/**********************************/
-//Insert the connection string here
-const char* connectionString = "";
-/**********************************/
+const char* connectionString = (const char*) SECRET_CONNECTIONSTRING;
 static int callbackCounter;
 static char msgText[1024];
 static char propText[1024];
