@@ -34,3 +34,6 @@
 #include <serializer.h>
 #include <serializer_devicetwin.h>
 #include <uamqp_messaging.h>
+#include <azure_c_shared_utility/threadapi.h>
+#include <azure_c_shared_utility/crt_abstractions.h>
+#include <azure_c_shared_utility/platform.h>
