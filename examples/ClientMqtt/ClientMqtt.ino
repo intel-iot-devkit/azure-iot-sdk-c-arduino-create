@@ -28,18 +28,11 @@ https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
 #include <stdio.h>
 #include <stdlib.h>
 #include "azure-iot-sdk.h"
-#include "iothub_client.h"
-#include "iothub_message.h"
-#include "azure_c_shared_utility/threadapi.h"
-#include "azure_c_shared_utility/crt_abstractions.h"
-#include "azure_c_shared_utility/platform.h"
-#include "iothubtransportmqtt.h"
 #include "arduino_secrets.h"
-
-#ifdef MBED_BUILD_TIMESTAMP
-#include "certs.h"
-#endif // MBED_BUILD_TIMESTAMP
-
+/**********************************/
+//Insert the connection string here
+const char* connectionString = "";
+/**********************************/
 static int callbackCounter;
 static char msgText[1024];
 static char propText[1024];
@@ -147,7 +140,7 @@ void iothub_client_sample_mqtt_run(void)
     }
     else
     {
-        if ((iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(SECRET_CONNECTIONSTRING, MQTT_Protocol)) == NULL)
+        if ((iotHubClientHandle = IoTHubClient_LL_CreateFromConnectionString(connectionString, MQTT_Protocol)) == NULL)
         {
             (void)printf("ERROR: iotHubClientHandle is NULL!\r\n");
         }
