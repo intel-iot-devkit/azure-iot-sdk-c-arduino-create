@@ -66,23 +66,21 @@ This tutorial will you walk you through using the Device Explorer GUI on windows
 
 ![](./../../extras/screen12.png)
 
-7. Go to the **Data** tab and click **Monitor**.  You should see a message saying "Receiving events" or similar.  This is where you will see messages once your application is running on your target.
-
-![](./../../extras/screen13.png)
 
 ## Edit example in Arduino Create
 
 1. Open the example **Libraries>AZURE IOT DEVICE SDK>Examples>ClientMqtt**
 
-![](./../../extras/screen14.png)
+![](./../../extras/screen13.png)
 
 2. Copy the connection string from step #7 above into the Secret tab of the sketch.
 
-![](./../../extras/screen15.png)
+![](./../../extras/screen14.png)
 
 3. Build and Upload the sketch.
 
 ## View the data
-Go back to the Data tab of the Device Explorer application, and you should see some events.
+Go to the **Data** tab and click **Monitor**.  You should see a message saying "Receiving events" or similar.  This is where you will see messages once your application is running on your target.
 
-<screenshot of events>
+![](./../../extras/screen15.png)
+
