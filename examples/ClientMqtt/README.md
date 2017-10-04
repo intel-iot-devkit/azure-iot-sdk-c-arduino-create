@@ -29,19 +29,19 @@ When it is done being created you should see it appear in the Dashboard
 
 2. Click **Add**
 
-<screenshot of Add>
+![](./../../extras/screen5.png)
 
 3. Select read, service connect, and device connect permissions.  Give it a name, for example "my-policy"
 
-<screenshot of permissions>
+![](./../../extras/screen6.png)
 
 4. The policy you created should now show up under **POLICY**. 
 
-<screenshot of policy in list>
+![](./../../extras/screen7.png)
 
 5. Click on your policy, and copy the **Connection string - primary key**, this is also known as the Hub connection string.  You will need it later.
 
-<screenshot of copying connection string>
+![](./../../extras/screen8.png)
 
 ## Setup device explorer
 
@@ -53,16 +53,17 @@ This tutorial will you walk you through using the Device Explorer GUI on windows
 
 2. Enter the **Connection string - primary key** you copied from step #5 of the above section into the **IoT Hub Connection String** field in the Configuration tab of the application.  Then click **Update**.  You should see a popup confirming that it was successful.
 
-<screenshot of entering connection string>
+![](./../../extras/screen9.png)
 
 5. Go to the **Management** tab.
-<screenshot of management tab>
+![](./../../extras/screen10.png)
 
 6. Click **Create** and enter a Device ID, for example "test-device".  The Primary and Secondary keys should have populated automatically.
 
 7. Go to the **Data** tab and click **Monitor**.  You should see a message saying "Receiving events" or similar.  This is where you will see messages once your application is running on your target.
 
-<screenshot of receiving events>
+![](./../../extras/screen11.png)
+
 
 ## Edit example in Arduino Create
 
