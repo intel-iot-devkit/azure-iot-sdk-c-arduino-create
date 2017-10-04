@@ -18,14 +18,14 @@ The portal is located at https://portal.azure.com
 
 When it is done being created you should see it appear in the Dashboard
 
-<screenshot of post hub creation>
+![](./../../extras/screen3.png)
 
 
 ## Create a shared access policy
 
 1. Open your hub and select **Shared access policies**, under **SETTINGS**
 
-<Screenshot of shared access pol>
+![](./../../extras/screen4.png)
 
 2. Click **Add**
 
