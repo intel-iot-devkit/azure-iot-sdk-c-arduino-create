@@ -14,7 +14,7 @@ The portal is located at https://portal.azure.com
 
 2. Name your hub something unique, for example my-iot-hub###, where ### is some number. It is recommended to use the default settings for the IoT hub creation.
 
-<screenshot of hub creation>
+![](./../../extras/screen2.png)
 
 When it is done being created you should see it appear in the Dashboard
 
