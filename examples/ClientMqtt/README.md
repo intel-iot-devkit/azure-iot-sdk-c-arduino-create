@@ -1,3 +1,12 @@
+## What you'll learn
+In this tutorial you will learn how to publish data to the Azure cloud using MQTT.  You will then read the data using the Device Explorer application.
+
+## Gather your materials
+UP Squared Board
+Grove Pi+* board
+Grove* Rotary Angle Sensor
+Grove* LED
+
 ## Setup device explorer
 
 The easiest way to view your data is either using the Device Explorer GUI application (for Windows)
@@ -6,7 +15,9 @@ The easiest way to view your data is either using the Device Explorer GUI applic
 
 2. Enter the following connection string into the **IoT Hub Connection String** field in the Configuration tab of the application.  
 
+```
 HostName=my-iot-hub55.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=bTezHqMDbhxy6fkGW09sXLCB6pYbAd9p7qZ0zAdiOEg=
+```
 
 Then click **Update**.  You should see a popup confirming that it was successful.
 
