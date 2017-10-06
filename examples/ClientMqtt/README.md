@@ -23,14 +23,14 @@ Then click **Update**.  You should see a popup confirming that it was successful
 
 ![](./../../extras/screen9.png)
 
-5. Go to the **Management** tab.
+3. Go to the **Management** tab.
 ![](./../../extras/screen10.png)
 
-6. Click **Create** and enter a Device ID, for example "test-device".  The Primary and Secondary keys should have populated automatically.
+4. Click **Create** and enter a Device ID, for example "test-device".  The Primary and Secondary keys should have populated automatically.
 
 ![](./../../extras/screen11.png)
 
-7. Right click on the device you just created, and select **Copy connection string for selected device**
+5. Right click on the device you just created, and select **Copy connection string for selected device**
 
 ![](./../../extras/screen12.png)
 
@@ -41,7 +41,7 @@ Then click **Update**.  You should see a popup confirming that it was successful
 
 ![](./../../extras/screen13.png)
 
-2. Copy the connection string from step #7 above into the Secret tab of the sketch.
+2. Copy the connection string from step #5 above into the Secret tab of the sketch.
 
 ![](./../../extras/screen14.png)
 
