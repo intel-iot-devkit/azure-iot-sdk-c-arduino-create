@@ -35,9 +35,9 @@ Then click **Update**.  You should see a popup confirming that it was successful
 ![](./../../extras/screen12.png)
 
 
-## Edit example in Arduino Create
+## Open the example in Arduino Create
 
-1. Open the example **Libraries>AZURE IOT DEVICE SDK>Examples>ClientMqtt**
+1. Open this example: https://create-intel.arduino.cc/editor/joebutler10/c3cc158e-577b-4e9e-9f52-094a42f5d945/preview 
 
 ![](./../../extras/screen13.png)
 
